@@ -48,5 +48,11 @@
         app:layout_anchor="@id/app_bar"
         app:layout_anchorGravity="bottom|end"
         app:srcCompat="@android:drawable/ic_dialog_email" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/goldfish"
+        android:layout_gravity="bottom|center_horizontal"
+        app:layout_behavior=""
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
