@@ -30,7 +30,7 @@ public class ImgBehavior extends CoordinatorLayout.Behavior<ImageView> {
             firstMove = false;
             initialX = child.getX();
         }
-        child.setX(initialX-dependency.getY()*1.5f);
+        child.setX(initialX-dependency.getY()*4f);
         return false;
     }
 }
