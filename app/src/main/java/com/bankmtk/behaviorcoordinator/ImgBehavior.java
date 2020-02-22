@@ -32,10 +32,7 @@ public class ImgBehavior extends CoordinatorLayout.Behavior<ImageView> {
             initialX = child.getX();
             initialY = child.getY();
         }
-        float point = dependency.getX();
-        child.setY(initialX-dependency.getY()*9f);
-        child.setX(initialX+100f);
-
+            child.setY(initialX-dependency.getY()*9f);
         return false;
     }
 }
