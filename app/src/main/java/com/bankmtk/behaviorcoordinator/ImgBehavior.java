@@ -12,6 +12,8 @@ import com.google.android.material.appbar.AppBarLayout;
 
 public class ImgBehavior extends CoordinatorLayout.Behavior<ImageView> {
     private float initialX = 0;
+    private float initialY = 0;
+
     private boolean firstMove = true;
 
     public ImgBehavior(Context context, AttributeSet attrs){
@@ -28,8 +30,12 @@ public class ImgBehavior extends CoordinatorLayout.Behavior<ImageView> {
         if (firstMove){
             firstMove = false;
             initialX = child.getX();
+            initialY = child.getY();
         }
-        child.setX(initialX-dependency.getY()*4f);
+        float point = dependency.getX();
+        child.setY(initialX-dependency.getY()*9f);
+        child.setX(initialX+100f);
+
         return false;
     }
 }
